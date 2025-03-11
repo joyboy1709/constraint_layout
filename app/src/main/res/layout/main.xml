@@ -12,9 +12,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Abrir Formulario Para Registro Email"
+        android:textColor="#000000"
+        android:backgroundTint="#FF0000"
+        android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
