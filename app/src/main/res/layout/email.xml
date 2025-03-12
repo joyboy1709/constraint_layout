@@ -4,35 +4,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/lightGreen">
 
-    <!-- Campo "To" (Destinatario) -->
+    <!-- Campo "To" -->
     <EditText
         android:id="@+id/emailTo"
-        android:layout_width="389dp"
-        android:layout_height="65dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="To"
         android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_edittext_green"
+        android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Campo "Subject" (Asunto) -->
+    <!-- Campo "Subject" -->
     <EditText
         android:id="@+id/emailSubject"
-        android:layout_width="386dp"
-        android:layout_height="63dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Subject"
         android:inputType="text"
+        android:background="@drawable/rounded_edittext_green"
+        android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailTo" />
 
-    <!-- Campo "Message" (Cuerpo del correo) -->
-
-    <!-- Botón "Send" -->
+    <!-- Campo "Message" -->
     <EditText
         android:id="@+id/emailMessage"
         android:layout_width="0dp"
@@ -41,18 +44,22 @@
         android:hint="Message"
         android:inputType="textMultiLine"
         android:minLines="5"
+        android:background="@drawable/rounded_edittext_green"
+        android:padding="12dp"
         app:layout_constraintBottom_toTopOf="@id/sendButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emailSubject"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/emailSubject"/>
 
+    <!-- Botón "Send" -->
     <Button
         android:id="@+id/sendButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primaryGreen"
+        android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
