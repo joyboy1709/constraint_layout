@@ -12,11 +12,11 @@ class MainActivity : AppCompatActivity() {
 
         val openPetFormButton = findViewById<Button>(R.id.openEmailFormButton)
         openPetFormButton.setOnClickListener {
-           // val intent = Intent(this, PetFormulario::class.java)
-            //startActivity(intent)
-
-            val intent = Intent(this, Email::class.java)
+           val intent = Intent(this, PetFormulario::class.java)
             startActivity(intent)
+
+            //val intent = Intent(this, Email::class.java)
+            //startActivity(intent)
         }
 
 
